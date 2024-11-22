@@ -16,10 +16,11 @@ module ripple_carry_adder_4bit (
     output Cout         // Carry output
 );
 
-    reg [3:0] sum_temp;
+
+   reg [3:0] sum_temp;
     reg cout_temp;
 
-    // Task for Full Adder
+'''    // Task for Full Adder
     task full_adder;
         input a, b, cin;
         output sum, cout;
@@ -29,7 +30,7 @@ module ripple_carry_adder_4bit (
         end
     endtask
 
-    // Ripple carry logic using task
+  '''  // Ripple carry logic using task
     always @(*) begin
         full_adder(A[0], B[0], Cin, sum_temp[0], cout_temp);
         full_adder(A[1], B[1], cout_temp, sum_temp[1], cout_temp);
@@ -37,9 +38,8 @@ module ripple_carry_adder_4bit (
         full_adder(A[3], B[3], cout_temp, sum_temp[3], Cout);
     end
 
-    assign Sum = sum_temp;
-
-endmodule
+ '''   assign Sum = sum_temp; 
+endmodule '''
 
 
 # Test bench for Ripple carry adder
