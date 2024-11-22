@@ -5,6 +5,7 @@ To design and simulate a 4-bit Ripple Counter using Verilog HDL with a function 
 
 # Apparatus Required:
 Computer with Vivado or any Verilog simulation software.
+
 Verilog HDL compiler.
 
 # Verilog Code
@@ -88,6 +89,7 @@ module ripple_carry_adder_4bit_tb;
 
 endmodule
 ```
+# OUTPUT
 
 ![image](https://github.com/user-attachments/assets/b115d200-5182-4a8e-8cd2-5d5ca3e3b706)
 
