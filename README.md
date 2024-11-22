@@ -8,7 +8,7 @@ Computer with Vivado or any Verilog simulation software.
 Verilog HDL compiler.
 
 # Verilog Code
-module ripple_carry_adder_4bit (
+''' module ripple_carry_adder_4bit (
     input [3:0] A,      // 4-bit input A
     input [3:0] B,      // 4-bit input B
     input Cin,          // Carry input
@@ -20,7 +20,7 @@ module ripple_carry_adder_4bit (
    reg [3:0] sum_temp;
     reg cout_temp;
 
-'''    // Task for Full Adder
+   // Task for Full Adder
     task full_adder;
         input a, b, cin;
         output sum, cout;
@@ -38,7 +38,7 @@ module ripple_carry_adder_4bit (
         full_adder(A[3], B[3], cout_temp, sum_temp[3], Cout);
     end
 
- '''   assign Sum = sum_temp; 
+   assign Sum = sum_temp; 
 endmodule '''
 
 
